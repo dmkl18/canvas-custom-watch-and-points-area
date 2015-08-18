@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>An example of canvas. Grid and points</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="js/dlc-canvas.min.js"></script>
+
+    <!--
+        or you can use this
+        <script src="js/base-canvas.js"></script>
+        <script src="js/area.js"></script>
+    -->
+
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrapper
+    {
+        min-height: 100%;
+        width: 1170px;
+        padding: 0 15px;
+        margin: 0 auto;
+        background: lightgrey;
+    }
+
+    #canvas-area
+    {
+        border: 1px dashed white;
+    }
+</style>
+
+</head>
+
+<body>
+	
+	<div id="wrapper">
+
+        <div>
+            <h3>Click on the crid to create or to move point</h3>
+        </div>
+
+		<div>
+			<canvas id="canvas-area" height="500" width="500"></canvas>
+		</div>
+	
+	</div>
+
+    <script>
+        var myArea = DLCCanvas.dlcArea({
+            canvasId: 'canvas-area',
+            gridInterval: 20,
+        });
+    </script>
+
+</body>
+
+</html>

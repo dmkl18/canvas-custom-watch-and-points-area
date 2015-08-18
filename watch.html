@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>An example of canvas. Watch</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="js/dlc-canvas.min.js"></script>
+    <!--
+        or you can use this
+        <script src="js/base-canvas.js"></script>
+        <script src="js/watch.js"></script>
+    -->
+
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrapper
+        {
+            min-height: 100%;
+            width: 1170px;
+            padding: 0 15px;
+            margin: 0 auto;
+            background: lightgrey;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <div>
+        <h3>Here you can see an example of canvas watch</h3>
+    </div>
+
+    <div>
+        <canvas id="watch1" height="160" width="160"></canvas>
+    </div>
+
+    <script>
+        var clock = DLCCanvas.dlcClock({
+            id: "watch1",
+            innerRingColor: "black",
+            outerRingColor: "orange",
+            secondHandColor: "orange",
+        });
+    </script>
+
+</div>
+
+
+</body>
+
+</html>
